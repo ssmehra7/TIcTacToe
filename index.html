@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <script async src="scripts/config.js"></script>
+    <script async src="scripts/game.js"></script>
+    <script async src="scripts/app.js"></script>
+    
+    
+</head>
+<body>
+    
+
+    <!-- aside -->
+    <div id="backdrop"></div>
+    
+
+    <!-- heading  -->
+    <div class="container">
+        <header>
+            <h1>TIC TAC TOE !</h1>
+            <p>This is built with HTML,CSS and JS.</p>
+        </header>
+
+    </div>
+
+   
+        <aside class="modal" id="playeroverlay">
+
+            <h2>Choose your name </h2>
+            <form>
+                <div>
+                    <label for="username">Player Name</label>
+                    <input type="text" name="username" id="username" required> 
+                </div>
+                <div>
+                    <button type="button" class="btn" id="cancle-btn">Cancel</button>
+                    <button type="submit" class="btn" id="confirm-btn">Confirm</button>
+                </div>
+            </form>
+        </aside>
+    
+   
+    
+<!-- player info -->
+
+
+
+<div class="container">
+    <div class="player-info"> 
+        <ul class="basic-info flex">
+            <li class="player-name">
+                <h2>Player1</h3>
+                <p class="name" id="Player1-name">Player-Name</p>
+                <p class="symbol">X</p>
+                <button type="button" class="btn" id="edit-player1-btn" data-playerid="1">Edit</button> 
+            </li>
+            <li class="player-name">
+                <h2>Player2</h3>
+                <p class="name" id="Player2-name">Player-Name</p>
+                <p class="symbol">O</p>
+                <button type="button" class="btn" id="edit-player2-btn" data-playerid="2">Edit</button>
+            </li>
+        </ul>
+    </div>
+
+</div>
+    
+<!-- normal-content -->
+
+<div class="container">
+    <div class="normal-area">
+        <h2>Click Start button to Start the Game!</h2>
+        <button class="btn" id="Stargamebtn">Start The Game</button>
+
+
+    </div>
+
+</div>
+
+
+<div class="container">
+    <div class="game-over">
+        <h1><span id="winner-name"></span></h1>
+        <button class="play-again btn " id="play-again1">Click to play again</button>
+    </div>
+</div>
+    
+<div class="container">
+    <div class="playing-area">
+
+        <ul id="game-board">
+            <li class="boxes" data-col="1" data-row="1"></li>
+            <li class="boxes" data-col="2" data-row="1"></li>
+            <li class="boxes" data-col="3" data-row="1"></li>
+
+            <li class="boxes" data-col="1" data-row="2"></li>
+            <li class="boxes" data-col="2" data-row="2"></li>
+            <li class="boxes" data-col="3" data-row="2"></li>
+
+            <li class="boxes" data-col="1" data-row="3"></li>
+            <li class="boxes" data-col="2" data-row="3"></li>
+            <li class="boxes" data-col="3" data-row="3"></li>
+        </ul>
+    </div>
+
+</div>
+
+
+
+
+    
+    
+</body>
+
+    
+</html>
